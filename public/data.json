@@ -52,7 +52,7 @@
     "services":[
       {
         "service_name":"",
-        "sertive_tipe":"",
+        "service_type":"",
         "cost":"",
         "description":""
       }
