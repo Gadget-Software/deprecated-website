@@ -1,0 +1,61 @@
+{
+  "main": {
+    "company_name":"",
+    "industry":"",
+    "tag_line":"",
+    "logo":"",
+    "short_description":"",
+    "contact_message":"",
+    "email": "",
+    "phone": "555-555-5555",
+    "address":{
+      "street":".",
+      "city":"",
+      "state":"",
+      "zip": ""
+    },
+    "social":[
+      {
+        "name":"twitter",
+        "url":"",
+        "className":"fa fa-twitter"
+      },
+      {
+        "name":"linkedin",
+        "url":"",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"github",
+        "url":"",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "business_specs":{
+    "products":[
+      {
+        "product_name":"",
+        "features":"",
+        "benefits":"",
+        "description":"",
+        "cost":""
+      },
+      {
+        "product_name":"",
+        "features":"",
+        "benefits":"",
+        "description":"",
+        "cost":""
+      }
+    ],
+    "services":[
+      {
+        "service_name":"",
+        "sertive_tipe":"",
+        "cost":"",
+        "description":""
+      }
+    ]
+  }
+}
