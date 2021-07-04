@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -26,7 +27,18 @@ const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
+const initialState = { info: null };
+
 export default function LandingPage(props) {
+  const [info, setInfo] = useState(initialState);
+
+  useEffect(async () => {
+    console.log("fetching data");
+    await fetch("data.json")
+      .then((resp) => resp.json())
+      .then((data) => setInfo({ ...info, data }));
+  });
+
   const classes = useStyles();
   const { ...rest } = props;
   return (

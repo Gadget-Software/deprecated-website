@@ -1,13 +1,13 @@
 {
   "main": {
-    "company_name":"",
-    "industry":"",
-    "tag_line":"",
+    "company_name":"Gadget",
+    "industry":"Industrial Manufacturing",
+    "tag_line":"Exposing your hidden data to help you build a better factory",
     "logo":"",
     "short_description":"",
-    "contact_message":"",
-    "email": "",
-    "phone": "555-555-5555",
+    "contact_message":"To reach out, please contact us using the email address below",
+    "email": "info@gadget.software",
+    "phone": "N/A",
     "address":{
       "street":".",
       "city":"",
@@ -51,10 +51,22 @@
     ],
     "services":[
       {
-        "service_name":"",
-        "service_type":"",
+        "service_name":"Centralize Machinery Data",
+        "service_type":"Data Extraction",
         "cost":"",
-        "description":""
+        "description":"If we want to make your factory more intelligent, we first have to give you a full understanding of what data your machinery has available, and extract all of it to a single data store for you to utilize how you please"
+      },
+      {
+        "service_name":"Data Visualization Tool",
+        "service_type":"Web Application",
+        "cost":"",
+        "description":"After we centralize all your machinery data, we can then create Data Visualization tools to better enable Managers and other stakeholders to understand what's happening on the factory floor, even while working remotely."
+      },
+      {
+        "service_name":"Machinery Monitoring",
+        "service_type":"Web Application",
+        "cost":"",
+        "description":"Once we have the full range of data available from your machinery, we can then come up with some monitoring solutions for your factory staff to make things on the factory floor run smoother."
       }
     ]
   }
