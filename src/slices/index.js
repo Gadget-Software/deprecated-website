@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-import infoReducer from "./infoSlice";
+import businessReducer from "./businessSlice";
 
 const rootReducer = combineReducers({
-  info: infoReducer,
+  business: businessReducer,
 });
 
 export default rootReducer;

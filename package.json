@@ -37,6 +37,7 @@
     "eslint-plugin-react": "7.23.2",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.9",
+    "json-loader": "^0.5.7",
     "prettier": "2.3.0"
   },
   "optionalDependencies": {

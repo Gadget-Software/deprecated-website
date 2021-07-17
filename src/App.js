@@ -1,23 +1,48 @@
 import React from "react";
-import { useDispatch } from "react-redux";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { createBrowserHistory } from "history";
-import { fetchInfo } from "./services/Info.service";
 import LandingPage from "views/LandingPage/LandingPage.js";
 
-var hist = createBrowserHistory();
+const initState = {
+  loading: true,
+  businessInfo: null,
+};
 
 function App() {
-  const dispatch = useDispatch();
+  const [state, setState] = useState(initState);
+
+  const getBusinessInfo = () => {
+    const myHeaders = new Headers({
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    });
+
+    fetch("data.json", {
+      headers: myHeaders,
+    })
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setState({ businessInfo: data, loading: false });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   useEffect(() => {
-    dispatch(fetchInfo());
+    getBusinessInfo();
   }, []);
 
   return (
-    <Router history={hist}>
+    <Router>
       <Route path="/">
-        <LandingPage />
+        <LandingPage
+          loading={state.loading}
+          businessInfo={state.businessInfo}
+        />
       </Route>
     </Router>
   );

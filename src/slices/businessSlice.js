@@ -1,44 +1,43 @@
+/* eslint-disable no-debugger */
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchInfo } from "../services/Info.service";
+import fetchBusinessInfo from "../services/Business.service";
 
 // set initial state of slice of store
 export const initialState = {
-  apiStatus: "idle",
-  filterStatus: null,
-  query: "",
+  loading: true,
+  status: "idle",
   error: null,
-  info: [],
+  info: null,
 };
 
 // a slice of root reducer
 const InfoSlice = createSlice({
-  name: "BusinessInfo",
+  name: "business",
   initialState,
   reducers: {
-    setFilterStatus(state, action) {
-      state.filterStatus = action.payload;
-    },
-    updateQuery(state, action) {
-      state.query = action.payload;
+    loading(state, action) {
+      state.loading = action.payload;
     },
   },
   extraReducers: {
-    [fetchInfo.fulfilled]: (state, action) => {
+    [fetchBusinessInfo.fulfilled]: (state, action) => {
       const data = action.payload;
       const errors = data["errors"] ? data["errors"] : null;
       if (errors) {
         state.status = "failed";
         state.error = errors;
       } else {
-        return { ...state, info: data };
+        console.log(data);
+        return { ...state, info: data, status: "good", loading: false };
       }
     },
-    [fetchInfo.rejected]: (state, action) => {
+    [fetchBusinessInfo.rejected]: (state, action) => {
+      state.loading = false;
       state.status = "failed";
       return { ...state, error: action.error };
     },
   },
 });
 
-export const { setFilterStatus, updateQuery } = InfoSlice.actions;
+export const { loading } = InfoSlice.actions;
 export default InfoSlice.reducer;
