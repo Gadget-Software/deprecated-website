@@ -1,7 +1,7 @@
 {
-  "name": "material-kit-react",
+  "name": "gadget.io",
   "version": "1.10.0",
-  "description": "Material Kit React. Coded by Creative Tim",
+  "description": "a business site by Aaron Feingold",
   "private": true,
   "main": "src/index.js",
   "dependencies": {
@@ -25,7 +25,8 @@
     "react-slick": "0.28.1",
     "redux": "^4.1.0",
     "redux-thunk": "^2.3.0",
-    "save": "^2.4.0"
+    "save": "^2.4.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@babel/cli": "7.13.16",

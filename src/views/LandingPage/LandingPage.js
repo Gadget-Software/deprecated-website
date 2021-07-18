@@ -19,23 +19,24 @@ import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
-import ProductSection from "./Sections/ProductSection.js";
-import TeamSection from "./Sections/TeamSection.js";
-import WorkSection from "./Sections/WorkSection.js";
+import ServicesSection from "./Sections/ServicesSection.js";
 
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
 export default function LandingPage(props) {
-  console.log(props);
   const { loading, businessInfo } = props;
 
   let main;
-  if (loading === false && businessInfo.main) {
+  let specs;
+
+  if (loading === false && businessInfo != null) {
     main = businessInfo.main;
+    specs = businessInfo.business_specs;
   } else {
-    main = "loading";
+    main = "";
+    specs = "";
   }
 
   const classes = useStyles();
@@ -47,7 +48,7 @@ export default function LandingPage(props) {
         <Header
           color="transparent"
           routes={dashboardRoutes}
-          brand="Material Kit React"
+          brand={main.company_name}
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
@@ -56,12 +57,12 @@ export default function LandingPage(props) {
           }}
           // {...rest}
         />
-        <Parallax filter image={require("assets/img/landing-bg.jpg").default}>
+        <Parallax filter image={require("assets/img/supercomp.jpg").default}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>{main.tag_line}</h1>
-                <h4>{main.company_name}</h4>
+                <h2 className={classes.title}>{main.tag_line}</h2>
+                <h4>{main.contact_message}</h4>
                 <br />
               </GridItem>
             </GridContainer>
@@ -69,9 +70,7 @@ export default function LandingPage(props) {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <ProductSection />
-            <TeamSection />
-            <WorkSection />
+            <ServicesSection services={specs.services} />
           </div>
         </div>
         <Footer />
