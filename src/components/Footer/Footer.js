@@ -29,30 +29,8 @@ export default function Footer(props) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-        <div className={classes.left}>
-          <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/presentation?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                About us
-              </a>
-            </ListItem>
-          </List>
-        </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
-          <a
-            href="https://github.com/aaronfeingold"
-            className={aClasses}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Aaron Feingold
-          </a>{" "}
+          &copy; {1900 + new Date().getYear()}, Gadget Software
         </div>
       </div>
     </footer>

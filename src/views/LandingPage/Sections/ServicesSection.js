@@ -19,7 +19,7 @@ import styles from "assets/jss/material-kit-react/views/landingPageSections/prod
 const useStyles = makeStyles(styles);
 
 export default function ServicesSection(props) {
-  const { services } = props;
+  const { services, email } = props;
   const classes = useStyles();
   const icons = [DataUsageIcon, AssessmentIcon, ApartmentIcon];
 
@@ -46,16 +46,20 @@ export default function ServicesSection(props) {
     <div className={classes.section}>
       <GridContainer justify="center" key={uuidv4()}>
         <GridItem xs={12} sm={12} md={8} key={uuidv4()}>
-          <h2 className={classes.title}>Let{"'"}s talk Services</h2>
-          <h5 className={classes.description}>
-            How does Gadget tunnel into servers like nobody before? Here are
-            just a few of our state-of-the-art systems:
-          </h5>
+          <h2 className={classes.title}>Services</h2>
         </GridItem>
       </GridContainer>
       <div>
         <GridContainer>{gridItems}</GridContainer>
       </div>
+      <GridContainer justify="center" key={uuidv4()}>
+        <GridItem xs={12} sm={12} md={8} key={uuidv4()}>
+          <h2 className={classes.title}>Contact</h2>
+        </GridItem>
+        <GridItem xs={12} sm={12} md={8} key={uuidv4()}>
+          <h3 className={classes.title}>{email}</h3>
+        </GridItem>
+      </GridContainer>
     </div>
   );
 }
