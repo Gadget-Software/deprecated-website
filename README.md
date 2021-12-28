@@ -1,7 +1,8 @@
-### HOW_TO
+### For Development
 
-first- clone to local machine, and cd into the project directory
+clone to local machine, and cd into the project directory
 
-second- install dependencies with: npm install
+install dependencies with: `npm install`
 
-third- toss it up into chrome with: npm start; and get going.
+serve and open in web browser with: `npm start`
+
