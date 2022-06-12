@@ -1,23 +1,23 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-debugger */
-import React from "react";
+import React from 'react';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@material-ui/core/styles';
 
 // @material-ui/icons
 
 // core components
-import Footer from "components/Footer/Footer.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Parallax from "components/Parallax/Parallax.js";
+import Footer from 'components/Footer/Footer.js';
+import GridContainer from 'components/Grid/GridContainer.js';
+import GridItem from 'components/Grid/GridItem.js';
+import Parallax from 'components/Parallax/Parallax.js';
 
-import styles from "assets/jss/material-kit-react/views/landingPage.js";
+import styles from 'assets/jss/material-kit-react/views/landingPage.js';
 
 // Sections for this page
-import ServicesSection from "./Sections/ServicesSection.js";
+import ServicesSection from './Sections/ServicesSection.js';
 
 const useStyles = makeStyles(styles);
 
@@ -31,8 +31,8 @@ export default function LandingPage(props) {
     main = businessInfo.main;
     specs = businessInfo.business_specs;
   } else {
-    main = "";
-    specs = "";
+    main = '';
+    specs = '';
   }
 
   const classes = useStyles();
@@ -43,7 +43,7 @@ export default function LandingPage(props) {
       <>
         <Parallax
           filter
-          image={require("assets/img/gadget_software.jpg").default}
+          image={require('assets/img/gadget_software.jpg').default}
         >
           <div className={classes.container}>
             <GridContainer>

@@ -1,20 +1,20 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
-import React from "react";
+import React from 'react';
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
-import { v4 as uuidv4 } from "uuid";
+import { makeStyles } from '@material-ui/core/styles';
+import { v4 as uuidv4 } from 'uuid';
 
 // @material-ui/icons
-import ApartmentIcon from "@material-ui/icons/Apartment";
-import DataUsageIcon from "@material-ui/icons/DataUsage";
-import AssessmentIcon from "@material-ui/icons/Assessment";
+import ApartmentIcon from '@material-ui/icons/Apartment';
+import DataUsageIcon from '@material-ui/icons/DataUsage';
+import AssessmentIcon from '@material-ui/icons/Assessment';
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import InfoArea from "components/InfoArea/InfoArea.js";
+import GridContainer from 'components/Grid/GridContainer.js';
+import GridItem from 'components/Grid/GridItem.js';
+import InfoArea from 'components/InfoArea/InfoArea.js';
 
-import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
+import styles from 'assets/jss/material-kit-react/views/landingPageSections/productStyle.js';
 
 const useStyles = makeStyles(styles);
 

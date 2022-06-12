@@ -1,7 +1,7 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import LandingPage from "views/LandingPage/LandingPage.js";
+import React from 'react';
+import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import LandingPage from 'views/LandingPage/LandingPage.js';
 
 const initState = {
   loading: true,
@@ -13,11 +13,11 @@ function App() {
 
   const getBusinessInfo = () => {
     const myHeaders = new Headers({
-      "Content-Type": "application/json",
-      Accept: "application/json",
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
     });
 
-    fetch("data.json", {
+    fetch('data.json', {
       headers: myHeaders,
     })
       .then((response) => {
