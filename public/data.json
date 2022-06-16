@@ -7,6 +7,7 @@
     "short_description":"",
     "contact_message":"To reach out, please contact us using the email address below",
     "email": "info@gadget.software",
+    "calendar_scheduling": "https://calendly.com/sanaths/gadget-software-custom-software-discussion",
     "phone": "N/A",
     "address":{
       "street":".",
@@ -34,22 +35,22 @@
     ],
     "services":[
       {
-        "service_name":"Centralize Machinery Data",
-        "service_type":"Data Extraction",
+        "service_name":"Order/Services Fulfillment Automation",
+        "service_type":"Automation",
         "cost":"",
-        "description":"If we want to make your factory more intelligent, we first have to give you a full understanding of what data your machinery has available, and extract all of it to a single data store for you to utilize how you please"
+        "description":"'I don't have enough time, space or energy.' is a common obstacle that prevents many organizations from taking the actions necessary to move from just getting by to really thriving. We build software to free up you and your employees time and energy from the energy-sapping, repetitive  but necessary tasks of your business, so you can move onto bigger and better things."
       },
       {
-        "service_name":"Data Visualization Tool",
+        "service_name":"Custom Business Operations Software",
         "service_type":"Web Application",
         "cost":"",
-        "description":"After we centralize all your machinery data, we can then create Data Visualization tools to better enable Managers and other stakeholders to understand what's happening on the factory floor, even while working remotely."
+        "description":"'I don't see any software platform that solves the need of my organization.' If there is something different, or nuanced about your operations and you can't find off-the-shelf software to fit your needs, building custom software is a viable alternative. From custom accounting systems, data-visualization, e-learning systems and beyond, we have expertise in a wide range of situations and always start with your context first."
       },
       {
-        "service_name":"Machinery Monitoring",
-        "service_type":"Web Application",
+        "service_name":"Software Consulting Services",
+        "service_type":"Consulting",
         "cost":"",
-        "description":"Once we have the full range of data available from your machinery, we can then come up with some monitoring solutions for your factory staff to make things on the factory floor run smoother."
+        "description":"'I have a software project in mind, but I have no idea how to go about it starting it and completing it with my finances and sanity intact.' Software, while a complicated craft is not unteachable in it's methodologies. The paths to failure are many, but the ones to success are few. From years of hard fought, acquired knowledge in the industry, we at Gadget Software have a pretty solid understanding of the patterns of what causes success and failure in any software project. Let us take you by the hand and get you focusing on what matters rather than the endless triviality that can distract you from getting your project done."
       }
     ]
   }
