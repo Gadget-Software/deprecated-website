@@ -63,7 +63,7 @@ export default function ServicesSection(props) {
         </GridItem>
         <GridItem xs={12} sm={12} md={8} key={uuidv4()}>
           <h3 className={classes.title}>
-            <a href={main.calendar_link} target="_blank" rel="noreferrer">
+            <a href={main.calendly_link} target="_blank" rel="noreferrer">
               Schedule a call
             </a>
           </h3>
