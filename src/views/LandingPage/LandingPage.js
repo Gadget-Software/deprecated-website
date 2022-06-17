@@ -56,7 +56,7 @@ export default function LandingPage(props) {
         </Parallax>
         <div className={classNames(classes.main)}>
           <div className={classes.container}>
-            <ServicesSection services={specs.services} email={main.email} />
+            <ServicesSection services={specs.services} main={main} />
           </div>
         </div>
         <Footer />

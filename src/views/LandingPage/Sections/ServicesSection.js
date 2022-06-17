@@ -19,7 +19,7 @@ import styles from 'assets/jss/material-kit-react/views/landingPageSections/prod
 const useStyles = makeStyles(styles);
 
 export default function ServicesSection(props) {
-  const { services, email } = props;
+  const { services, main } = props;
   const classes = useStyles();
   const icons = [DataUsageIcon, AssessmentIcon, ApartmentIcon];
 
@@ -57,7 +57,16 @@ export default function ServicesSection(props) {
           <h2 className={classes.title}>Contact</h2>
         </GridItem>
         <GridItem xs={12} sm={12} md={8} key={uuidv4()}>
-          <h3 className={classes.title}>{email}</h3>
+          <h3 className={classes.title}>
+            <a href={'mailto:' + main.email}>{main.email}</a>
+          </h3>
+        </GridItem>
+        <GridItem xs={12} sm={12} md={8} key={uuidv4()}>
+          <h3 className={classes.title}>
+            <a href={main.calendar_link} target="_blank" rel="noreferrer">
+              Schedule a call
+            </a>
+          </h3>
         </GridItem>
       </GridContainer>
     </div>
