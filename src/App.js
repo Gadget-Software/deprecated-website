@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import LandingPage from 'views/LandingPage/LandingPage.js';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HomePage } from './pages/HomePage/HomePage';
 
 const initState = {
   loading: true,
@@ -12,24 +12,18 @@ function App() {
   const [state, setState] = useState(initState);
 
   const getBusinessInfo = () => {
-    const myHeaders = new Headers({
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
-    });
-
-    fetch('data.json', {
-      headers: myHeaders,
+    fetch('/data.json', {
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
     })
-      .then((response) => {
-        return response.json();
-      })
+      .then((response) => response.json())
       .then((data) => {
         console.log(data);
         setState({ businessInfo: data, loading: false });
       })
-      .catch((err) => {
-        console.log(err);
-      });
+      .catch(console.error);
   };
 
   useEffect(() => {
@@ -37,14 +31,15 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <Route path="/">
-        <LandingPage
-          loading={state.loading}
-          businessInfo={state.businessInfo}
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          exact
+          element={<HomePage businessInfo={state.businessInfo} />}
         />
-      </Route>
-    </Router>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

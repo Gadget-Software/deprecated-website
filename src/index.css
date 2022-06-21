@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  @apply h-full;
+}
+
+.cta-btn {
+  @apply bg-cyan-500 hover:bg-cyan-400 text-white py-3 px-7 rounded;
+}
