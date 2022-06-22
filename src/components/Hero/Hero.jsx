@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { Parallax } from 'react-parallax';
 import './style.scss';
 import image from '../../assets/img/gadget_software.jpg';
+import { Content } from '../Content/Content';
 
 export const Hero = ({ title, small = false }) => {
   const classes = classNames(
@@ -16,10 +17,10 @@ export const Hero = ({ title, small = false }) => {
   return (
     <div className="relative">
       <Parallax className={classes} bgImage={image} strength={400} />
-      <div className="absolute top-0 left-0 h-full w-full bg-black bg-opacity-30 text-white">
-        <div className="absolute top-1/2 text-4xl w-full md:max-w-2xl text-center px-10 md:text-left md:pl-10">
-          {title}
-        </div>
+      <div className="absolute top-0 left-0 h-full w-full bg-black bg-opacity-30 text-white flex flex-row justify-start items-center">
+        <Content className="">
+          <div className="text-4xl px-10 md:px-0 md:max-w-2xl">{title}</div>
+        </Content>
       </div>
     </div>
   );
