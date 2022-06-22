@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HomePage } from './pages/HomePage/HomePage';
+import { FruchtbotePage } from './pages/FruchtbotePage/FruchtbotePage';
 
 const initState = {
   loading: true,
@@ -37,6 +38,11 @@ function App() {
           path="/"
           exact
           element={<HomePage businessInfo={state.businessInfo} />}
+        />
+        <Route
+          path="/case-studies/fruchtbote"
+          exact
+          element={<FruchtbotePage businessInfo={state.businessInfo} />}
         />
       </Routes>
     </BrowserRouter>

@@ -1,56 +1,74 @@
 {
   "main": {
-    "company_name":"Gadget Software",
-    "industry":"Industrial Manufacturing",
-    "tag_line":"Automating your business with the power of custom software",
-    "logo":"",
-    "short_description":"",
-    "contact_message":"To reach out, please contact us using the email address below",
+    "company_name": "Gadget Software",
+    "industry": "Industrial Manufacturing",
+    "tag_line": "Automating your business with the power of custom software",
+    "logo": "",
+    "short_description": "",
+    "contact_message": "To reach out, please contact us using the email address below",
     "email": "info@gadget.software",
     "calendly_link": "https://calendly.com/sanaths/gadget-software-custom-software-discussion",
     "phone": "N/A",
-    "address":{
-      "street":".",
-      "city":"",
-      "state":"",
+    "address": {
+      "street": ".",
+      "city": "",
+      "state": "",
       "zip": ""
     }
   },
-  "business_specs":{
-    "products":[
+  "caseStudies": {
+    "fruchtbote": {
+      "images": [
+        "fruchtbote/cat-1.jpg",
+        "fruchtbote/cat-2.jpg",
+        "fruchtbote/cat-1.jpg",
+        "fruchtbote/cat-2.jpg",
+        "fruchtbote/cat-1.jpg",
+        "fruchtbote/cat-2.jpg"
+      ],
+      "videos": [{
+        "id": "G1IbRujko-A",
+        "quote": "Gadget Software went above and beyond what we expected."
+      }],
+      "description": "Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto beatae dicta dolorem eius eos exercitationem facere laborum laudantium natus perspiciatis placeat quam quia rerum, soluta tenetur ullam ut velit.",
+      "impact": "Impact: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto beatae dicta dolorem eius eos exercitationem facere laborum laudantium natus perspiciatis placeat quam quia rerum, soluta tenetur ullam ut velit."
+    }
+  },
+  "business_specs": {
+    "products": [
       {
-        "product_name":"",
-        "features":"",
-        "benefits":"",
-        "description":"",
-        "cost":""
+        "product_name": "",
+        "features": "",
+        "benefits": "",
+        "description": "",
+        "cost": ""
       },
       {
-        "product_name":"",
-        "features":"",
-        "benefits":"",
-        "description":"",
-        "cost":""
+        "product_name": "",
+        "features": "",
+        "benefits": "",
+        "description": "",
+        "cost": ""
       }
     ],
-    "services":[
+    "services": [
       {
-        "service_name":"Order/Services Fulfillment Automation",
-        "service_type":"Automation",
-        "cost":"",
-        "description":"'I don't have enough time, space or energy.' is a common obstacle that prevents many organizations from taking the actions necessary to move from just getting by to really thriving. We build software to free up you and your employees time and energy from the energy-sapping, repetitive  but necessary tasks of your business, so you can move onto bigger and better things."
+        "service_name": "Order/Services Fulfillment Automation",
+        "service_type": "Automation",
+        "cost": "",
+        "description": "'I don't have enough time, space or energy.' is a common obstacle that prevents many organizations from taking the actions necessary to move from just getting by to really thriving. We build software to free up you and your employees time and energy from the energy-sapping, repetitive  but necessary tasks of your business, so you can move onto bigger and better things."
       },
       {
-        "service_name":"Custom Business Operations Software",
-        "service_type":"Web Application",
-        "cost":"",
-        "description":"'I don't see any software platform that solves the need of my organization.' If there is something different, or nuanced about your operations and you can't find off-the-shelf software to fit your needs, building custom software is a viable alternative. From custom accounting systems, data-visualization, e-learning systems and beyond, we have expertise in a wide range of situations and always start with your context first."
+        "service_name": "Custom Business Operations Software",
+        "service_type": "Web Application",
+        "cost": "",
+        "description": "'I don't see any software platform that solves the need of my organization.' If there is something different, or nuanced about your operations and you can't find off-the-shelf software to fit your needs, building custom software is a viable alternative. From custom accounting systems, data-visualization, e-learning systems and beyond, we have expertise in a wide range of situations and always start with your context first."
       },
       {
-        "service_name":"Software Consulting Services",
-        "service_type":"Consulting",
-        "cost":"",
-        "description":"'I have a software project in mind, but I have no idea how to go about it starting it and completing it with my finances and sanity intact.' Software, while a complicated craft is not unteachable in its methodologies. The paths to failure are many, but the ones to success are few. From years of hard fought, acquired knowledge in the industry, we at Gadget Software have a pretty solid understanding of the patterns of what causes success and failure in any software project. Let us take you by the hand and get you focusing on what matters rather than the endless triviality that can distract you from getting your project done."
+        "service_name": "Software Consulting Services",
+        "service_type": "Consulting",
+        "cost": "",
+        "description": "'I have a software project in mind, but I have no idea how to go about it starting it and completing it with my finances and sanity intact.' Software, while a complicated craft is not unteachable in its methodologies. The paths to failure are many, but the ones to success are few. From years of hard fought, acquired knowledge in the industry, we at Gadget Software have a pretty solid understanding of the patterns of what causes success and failure in any software project. Let us take you by the hand and get you focusing on what matters rather than the endless triviality that can distract you from getting your project done."
       }
     ]
   }
