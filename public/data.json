@@ -19,12 +19,30 @@
   "caseStudies": {
     "fruchtbote": {
       "images": [
-        "fruchtbote/cat-1.jpg",
-        "fruchtbote/cat-2.jpg",
-        "fruchtbote/cat-1.jpg",
-        "fruchtbote/cat-2.jpg",
-        "fruchtbote/cat-1.jpg",
-        "fruchtbote/cat-2.jpg"
+        {
+          "alt": "dark cat looking majestic",
+          "path": "fruchtbote/cat-1.jpg"
+        },
+        {
+          "alt": "orange cat looking grumpy",
+          "path": "fruchtbote/cat-2.jpg"
+        },
+        {
+          "alt": "dark cat looking majestic",
+          "path": "fruchtbote/cat-1.jpg"
+        },
+        {
+          "alt": "orange cat looking grumpy",
+          "path": "fruchtbote/cat-2.jpg"
+        },
+        {
+          "alt": "dark cat looking majestic",
+          "path": "fruchtbote/cat-1.jpg"
+        },
+        {
+          "alt": "orange cat looking grumpy",
+          "path": "fruchtbote/cat-2.jpg"
+        }
       ],
       "videos": [{
         "id": "G1IbRujko-A",

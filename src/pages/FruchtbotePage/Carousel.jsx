@@ -25,12 +25,17 @@ export const Carousel = ({ images }) => (
   <Swiper {...config}>
     {images.map((image, i) => (
       <SwiperSlide key={i}>
-        <img src={image} />
+        <img src={image.path} alt={image.alt} />
       </SwiperSlide>
     ))}
   </Swiper>
 );
 
 Carousel.propTypes = {
-  images: PropTypes.arrayOf(PropTypes.string),
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      alt: PropTypes.string,
+      path: PropTypes.string,
+    }),
+  ),
 };

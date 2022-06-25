@@ -16,9 +16,10 @@ export const FruchtbotePage = ({ businessInfo }) => {
 
   const caseStudy = businessInfo.caseStudies.fruchtbote;
 
-  const images = caseStudy.images.map((image) =>
-    require('../../assets/img/case-studies/' + image),
-  );
+  const images = caseStudy.images.map((image) => ({
+    alt: image.alt,
+    path: require('../../assets/img/case-studies/' + image.path),
+  }));
   const video = caseStudy.videos[0];
   return (
     <div>
