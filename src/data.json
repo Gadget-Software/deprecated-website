@@ -20,36 +20,24 @@
     "fruchtbote": {
       "images": [
         {
-          "alt": "dark cat looking majestic",
-          "path": "fruchtbote/cat-1.jpg"
+          "alt": "login page",
+          "path": "fruchtbote/login.png"
         },
         {
-          "alt": "orange cat looking grumpy",
-          "path": "fruchtbote/cat-2.jpg"
+          "alt": "order list page",
+          "path": "fruchtbote/orderlist.png"
         },
         {
-          "alt": "dark cat looking majestic",
-          "path": "fruchtbote/cat-1.jpg"
-        },
-        {
-          "alt": "orange cat looking grumpy",
-          "path": "fruchtbote/cat-2.jpg"
-        },
-        {
-          "alt": "dark cat looking majestic",
-          "path": "fruchtbote/cat-1.jpg"
-        },
-        {
-          "alt": "orange cat looking grumpy",
-          "path": "fruchtbote/cat-2.jpg"
+          "alt": "order completion form",
+          "path": "fruchtbote/orderform.png"
         }
       ],
       "videos": [{
         "id": "G1IbRujko-A",
-        "quote": "Gadget Software went above and beyond what we expected."
+        "quote": "Because of Gadget, We ave been able to focus on new opportunities instead of our process issues, which has resulted in real growth for Fruchtbote."
       }],
-      "description": "Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto beatae dicta dolorem eius eos exercitationem facere laborum laudantium natus perspiciatis placeat quam quia rerum, soluta tenetur ullam ut velit.",
-      "impact": "Impact: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto beatae dicta dolorem eius eos exercitationem facere laborum laudantium natus perspiciatis placeat quam quia rerum, soluta tenetur ullam ut velit."
+      "description": "Description: Fruchtobte is a specialty fruit ecommerce company focusing on delivering the highest quality fruits. Due to the nature of their business and customer expectations, they have a unique process for order fulfillment that previously required a lot of pen and paper tracking. To help reduce the original amount of human labor involved in the process, Gadget Software created a dedicated order fulfillment application to simplify and automate it on their behalf.",
+      "impact": "Impact: One of their primary partners was able to save X hours a week, previously allocated to a repetitive setup and verification of our previous paper-led order fulfillment process. Errors in the packing step of order fulfillment have gone down by X%, and the speed and consistency increases have resulted in X, Y, and Z for Fruchtbote."
     }
   },
   "business_specs": {
