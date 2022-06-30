@@ -1,35 +1,10 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HomePage } from './pages/HomePage/HomePage';
 import { FruchtbotePage } from './pages/FruchtbotePage/FruchtbotePage';
 
-const initState = {
-  loading: true,
-  businessInfo: null,
-};
-
 function App() {
-  const [state, setState] = useState(initState);
-
-  const getBusinessInfo = () => {
-    fetch('/data.json', {
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        setState({ businessInfo: data, loading: false });
-      })
-      .catch(console.error);
-  };
-
-  useEffect(() => {
-    getBusinessInfo();
-  }, []);
+  const state = { businessInfo: require('./data.json'), loading: false };
 
   return (
     <BrowserRouter>
